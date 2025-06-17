@@ -11,6 +11,7 @@ public class DynamicArray<E> {
     private static final int DEFAULT_CAPACITY = 10;
     private static final double GROWTH = 1.5;
 
+    @SuppressWarnings("unchecked")
     public DynamicArray(int initialCapacity) {
         this.capacity = initialCapacity;
         this.array = (E[]) new Object[initialCapacity];
