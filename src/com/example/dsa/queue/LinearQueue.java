@@ -14,7 +14,7 @@ public class LinearQueue<E> {
         this(DEFAULT_CAPACITY);
     }
 
-    public void enqueue(E element) {
+    public void enque(E element) {
         if (isFull()) {
             throw new RuntimeException("Queue is full");
         }
@@ -22,7 +22,7 @@ public class LinearQueue<E> {
         front++;
     }
 
-    public E deuque() {
+    public E deque() {
         if (isEmpty()) {
             throw new RuntimeException("Queue is empty");
         }
